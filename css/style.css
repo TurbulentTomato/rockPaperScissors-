@@ -26,6 +26,7 @@ button {
   width: 100px;
   border-radius: 50px;
   border: 2px solid black;
+  background-size: cover;
 }
 
 .buttons {
@@ -40,4 +41,16 @@ button {
   width: 400px;
   min-width: 300px;
   font-size: 2em;
+}
+
+.rock {
+  background-image: url("../images/rock.png");
+}
+
+.paper {
+  background-image: url("../images/paper.png");
+}
+
+.scissors {
+  background-image: url("../images/scissors.png");
 }
