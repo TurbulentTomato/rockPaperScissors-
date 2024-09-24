@@ -33,16 +33,21 @@ function playGame(event) {
           winner = "Computer";
           compScore++;
           break;
+        } else {
+          winner = "Player"
+          playerScore++;
+          break;
         }
-      //if compChoice == sisccors, 
-      //breakthrough will happen and we get desired result
       case "paper":
         if (compChoice === "rock") {
           winner = "Player";
           playerScore++;
           break;
+        } else {
+          winner = "Computer"
+          compScore++;
+          break;
         }
-      //again using breakthrough
       case "scissors":
         if (compChoice === "rock") {
           winner = "Computer";
@@ -58,11 +63,11 @@ function playGame(event) {
     }
   }
   let message = `
-Computer Played: ${compChoice} <br>
-Player Played: ${playerChoice} <br>
-${winner} wins!!! <br>
-Player Score: ${playerScore} <br>
-Computer Score: ${compScore}
+•Computer played: ${compChoice} <br>
+•Player played: ${playerChoice} <br>
+•Winner: ${winner} <br>
+•Player Score: ${playerScore} <br>
+•Computer Score: ${compScore}
 `
   display.innerHTML = message;
 }
